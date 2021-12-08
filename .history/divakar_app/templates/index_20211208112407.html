@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+{%block body%}
+<br><br><br>
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="{%static '/images/landingpage.jpg'%}" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{%static '/images/landingpage.jpg'%}" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="{%static '/images/landingpage.jpg'%}" class="d-block w-100" alt="">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br><br>
+  <h2 class="text-center">AMAR AIR COOLERS</h2><br>
+  <div class="container">
+    <p class="content">
+        We are one of the leaders in manufacturing desert air coolers in Indore and have
+        been providing quality products to our customers for over twelve years.
+        
+    </p>
+    <p class="content">
+        Amar Air Cooler uses energy efficient evaporative cooling technology to bring fresh
+        air into your home or office to cool your world.
+    </p>
+    <br><br>
+    <div >
+        <img src="{%static '/images/landingpage.jpg'%}" class="img-fluid d-block mx-auto" alt="...">
+    </div>
+</div>
+{%endblock body%}
